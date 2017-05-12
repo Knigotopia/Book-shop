@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Книжный магазин «Книготопия»</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<header id="header"><!--header-->
+		<div class="header_top"><!--header_top-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 ">
+						<div class="contactinfo">
+							<ul class="nav nav-pills">
+								<li><a href="#"><i class="fa fa-phone"></i> +3 8(063) 236-93-63</a></li>
+								<li><a href="mailto:knigotopia@ukr.net"><i class="fa fa-envelope"></i> knigotopia@ukr.net</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="social-icons pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="#"><img src="images/home/facebook.png" /></a></li>
+								<li><a href="#"><img src="images/home/vk.png" /></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header_top-->
+		
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="logo pull-left">
+							<a href="index.html"><h1>Книжный магазин <q>Книготопия</q></h1></a>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="#"><i class="fa fa-user"></i> Профиль</a></li>
+								<li><a href="#"><i class="fa fa-star"></i> Избранное</a></li>
+								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Корзина</a></li>
+								<li><a href="login.html"><i class="fa fa-lock"></i> Логин</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+	
+		<div class="header-bottom"><!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Навигация</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a href="index.html" class="active">Главная</a></li>
+								<li class="dropdown"><a href="#">Товары<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+											<li><a href="shop.html">Художественная литература</a></li>
+											<li><a href="product-details.html">Детская литература</a></li> 
+											<li><a href="checkout.html">Подарочные издания</a></li> 
+											<li><a href="cart.html">Специализированная литература</a></li>
+                                    </ul>
+                                </li> 
+								<li><a href="#">Новости</a></li> 
+								<li><a href="">Оплата и способ доставки</a></li>
+								<li><a href="contact-us.html">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<form class="form-search">
+							<div class="input-append">
+								<input type="text" class="span2 search-query" placeholder="Поиск по сайту">
+								<button type="submit" class="btn">Поиск</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-bottom-->
+	</header><!--/header-->
+		
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="left-sidebar">
+						<h2>Категории</h2>
+						<div class="panel-group category-products" id="accordian"><!--category-->
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordian" href="#sportswear">
+											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+											Художественная литература
+										</a>
+									</h4>
+								</div>
+								<div id="sportswear" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="#">Проза</a></li>
+											<li><a href="#">Детективы, триллеры, приключения</a></li>
+											<li><a href="#">Фантастика, фэнтези, мистика</a></li>
+											<li><a href="#">Комиксы и графические романы</a></li>
+											<li><a href="#">Романы</a></li>
+											<li><a href="#">Классика</a></li>
+											<li><a href="#">Поэзия и лирика</a></li>
+											<li><a href="#">Юмор и сатира</a></li>
+											<li><a href="#">Биография и афоризмы</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordian" href="#mens">
+											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+											Детская литература
+										</a>
+									</h4>
+								</div>
+								<div id="mens" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="#">Здоровье и воспитание детей</a></li>
+											<li><a href="#">Детская художественная литература</a></li>
+											<li><a href="#">Стихи и сказки</a></li>
+											<li><a href="#">Творчество</a></li>
+											<li><a href="#">Энциклопедии и атласы</a></li>
+											<li><a href="#">Для самых маленьких</a></li>
+											<li><a href="#">Музыкальные книги</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordian" href="#womens">
+											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+											Специализированная литература
+										</a>
+									</h4>
+								</div>
+								<div id="womens" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="#">Медицина и здоровье</a></li>
+											<li><a href="#">Религия, эзотерика</a></li>
+											<li><a href="#">Психология, социология, философия</a></li>
+											<li><a href="#">История</a></li>
+											<li><a href="#">Кулинария, рукоделие, домоводство</a></li>
+											<li><a href="#">Мода, стиль, красота</a></li>
+											<li><a href="#">Публицистика</a></li>
+											<li><a href="#">Научно-популярная</a></li>
+											<li><a href="#">Искусство и архитектура</a></li>
+											<li><a href="#">Туризм. Путеводители</a></li>
+											<li><a href="#">Спорт</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">Подарочные издания</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">Арт-буки и креативные блокноты</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">Творчество</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">Развивающие игры</a></h4>
+								</div>
+							</div>
+						</div><!--/category-->
+					
+						<div class="brands_products"><!--brands-->
+							<h2>Издательства</h2>
+							<div class="brands-name">
+								<ul class="nav nav-pills nav-stacked">
+									<li><a href="#"> <span class="pull-right">(50)</span>Эксмо</a></li>
+									<li><a href="#"> <span class="pull-right">(56)</span>АСТ</a></li>
+									<li><a href="#"> <span class="pull-right">(27)</span>Махаон</a></li>
+									<li><a href="#"> <span class="pull-right">(32)</span>Росмэн</a></li>
+									<li><a href="#"> <span class="pull-right">(5)</span>Азбука</a></li>
+									<li><a href="#"> <span class="pull-right">(9)</span>Альфа</a></li>
+									<li><a href="#"> <span class="pull-right">(4)</span>Пегас</a></li>
+								</ul>
+							</div>
+						</div><!--/brands-->
+						
+						<div class="price-range"><!--price-range-->
+							<h2>Диапазон цен</h2>
+							<div class="well text-center">
+								 <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="3800" data-slider-step="5" data-slider-value="[250,450]" id="sl2" ><br />
+								 <b class="pull-left">UAH 0</b> <b class="pull-right">UAH 3800</b>
+							</div>
+						</div><!--/price-range-->
+						
+						<div class="shipping text-center"><!--иконка-->
+							<img src="images/home/book.jpg" alt="" />
+						</div><!--/иконка-->
+					
+					</div>
+				</div>
+				
+				<div class="col-sm-9 padding-right">
+					<div class="features_items"><!--Товары-->
+						<h2 class="title text-center">Художественная литература</h2>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="images/shop/prod1.jpg" alt="Асадов" />
+										<h2>126 Грн.</h2>
+										<p><q>Избранное</q></p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<h2>126 Грн.</h2>
+											<p><q>Избранное</q></p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+										</div>
+									</div>
+								</div>
+								<div class="choose">
+									<ul class="nav nav-pills nav-justified">
+										<li><a href=""><i class="fa fa-plus-square"></i>В избранное</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="images/shop/prod2.jpg" alt="" />
+										<h2>380 Грн.</h2>
+										<p><q>Игра престолов</q></p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<h2>380 Грн.</h2>
+											<p><q>Игра престолов</q></p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+										</div>
+									</div>
+								</div>
+								<div class="choose">
+									<ul class="nav nav-pills nav-justified">
+										<li><a href=""><i class="fa fa-plus-square"></i>В избранное</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="images/shop/prod3.jpg" alt="" />
+										<h2>188 Грн.</h2>
+										<p><q>Девушка online</q></p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<h2>188 Грн.</h2>
+											<p>q>Девушка online</q></p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+										</div>
+									</div>
+								</div>
+								<div class="choose">
+									<ul class="nav nav-pills nav-justified">
+										<li><a href=""><i class="fa fa-plus-square"></i>В избранное</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="images/shop/prod5.jpg" alt="" />
+										<h2>180 Грн.</h2>
+										<p><q>Илон Маск. Tesla, SpaceX и дорога в будущее</q></p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<h2>180 Грн.</h2>
+											<p><q>Илон Маск. Tesla, SpaceX и дорога в будущее</q></p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+										</div>
+									</div>
+									<img src="images/home/new.png" class="new" alt="" />
+								</div>
+								<div class="choose">
+									<ul class="nav nav-pills nav-justified">
+										<li><a href=""><i class="fa fa-plus-square"></i>В избранное</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="images/shop/prod4.jpg" alt="" />
+										<h2>330 Грн.</h2>
+										<p><q>Флэш. Книга 1. Только вперед</q></p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<h2>330 Грн.</h2>
+											<p><q>Флэш. Книга 1. Только вперед</q></p>	
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+										</div>
+									</div>
+									<img src="images/home/sale.png" class="new" alt="" />
+								</div>
+								<div class="choose">
+									<ul class="nav nav-pills nav-justified">
+										<li><a href=""><i class="fa fa-plus-square"></i>В избранное</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="images/shop/prod6.jpg" alt="" />
+										<h2>313 Грн.</h2>
+										<p><q>Большая книга одесского юмора</q></p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<h2>313 Грн.</h2>
+											<p><q>Большая книга одесского юмора</q></p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+										</div>
+									</div>
+								</div>
+								<div class="choose">
+									<ul class="nav nav-pills nav-justified">
+										<li><a href=""><i class="fa fa-plus-square"></i>В избранное</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="images/shop/prod7.jpg" alt="" />
+										<h2>480 Грн.</h2>
+										<p><q>Из третьего мира в первый. История Сингапура 1965-2000</q></p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<h2>480 Грн.</h2>
+											<p><q>Из третьего мира в первый. История Сингапура 1965-2000</q></p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+										</div>
+									</div>
+								</div>
+								<div class="choose">
+									<ul class="nav nav-pills nav-justified">
+										<li><a href=""><i class="fa fa-plus-square"></i>В избранное</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="images/shop/prod8.jpg" alt="" />
+										<h2>2028 Грн.</h2>
+										<p><q>Энциклопедия Marvel</q></p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<h2>2028 Грн.</h2>
+											<p><q>Энциклопедия Marvel</q></p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+										</div>
+									</div>
+								</div>
+								<div class="choose">
+									<ul class="nav nav-pills nav-justified">
+										<li><a href=""><i class="fa fa-plus-square"></i>В избранное</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="images/shop/prod9.jpg" alt="" />
+										<h2>288 Грн.</h2>
+										<p><q>Бабий ветер</q></p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<h2>288 Грн.</h2>
+											<p><q>Бабий ветер</q></p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+										</div>
+									</div>
+								</div>
+								<div class="choose">
+									<ul class="nav nav-pills nav-justified">
+										<li><a href=""><i class="fa fa-plus-square"></i>В избранное</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="images/shop/prod10.jpg" alt="" />
+										<h2>60 Грн.</h2>
+										<p><q>Книга, которой нет</q></p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<h2>60 Грн.</h2>
+											<p><q>Книга, которой нет</q></p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+										</div>
+									</div>
+								</div>
+								<div class="choose">
+									<ul class="nav nav-pills nav-justified">
+										<li><a href=""><i class="fa fa-plus-square"></i>В избранное</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="images/shop/prod11.jpg" alt="" />
+										<h2>126 Грн.</h2>
+										<p><q>Облачный атлас</q></p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<h2>126 Грн.</h2>
+											<p><q>Облачный атлас</q></p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+										</div>
+									</div>
+								</div>
+								<div class="choose">
+									<ul class="nav nav-pills nav-justified">
+										<li><a href=""><i class="fa fa-plus-square"></i>В избранное</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="images/shop/prod12.jpg" alt="" />
+										<h2>100 Грн.</h2>
+										<p><q>Бегущий за ветром</q></p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<h2>100 Грн.</h2>
+											<p><q>Бегущий за ветром</q></p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+										</div>
+									</div>
+								</div>
+								<div class="choose">
+									<ul class="nav nav-pills nav-justified">
+										<li><a href=""><i class="fa fa-plus-square"></i>В избранное</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<ul class="pagination">
+							<li class="active"><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">&raquo;</a></li>
+						</ul>
+					</div><!--features_items-->
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer id="footer"><!--Footer-->
+			<div class="container">
+				<div class="col-sm-8">
+					<div class="contact">
+						<div class="well well-sm">
+							<form class="form-horizontal" action="" method="post">
+								<fieldset>
+									<legend class="text-center">Задайте Ваш вопрос</legend>
+					  
+										<!-- Name input-->
+										<div class="form-group">
+										  <label class="col-md-3 control-label" for="name">Имя</label>
+										  <div class="col-md-9">
+											<input id="name" name="name" type="text" placeholder="Имя" class="form-control">
+										  </div>
+										</div>
+					  
+										<!-- Email input-->
+										<div class="form-group">
+										  <label class="col-md-3 control-label" for="email">Ваш E-mail</label>
+										  <div class="col-md-9">
+											<input id="email" name="email" type="text" placeholder="e-mail" class="form-control">
+										  </div>
+										</div>
+					  
+										<!-- Message body -->
+										<div class="form-group">
+										  <label class="col-md-3 control-label" for="message">Сообщение</label>
+										  <div class="col-md-9">
+											<textarea class="form-control" id="message" name="message" placeholder="Впишите Ваш вопрос сюда..." rows="5"></textarea>
+										  </div>
+										</div>
+					  
+										<!-- Form actions -->
+										<div class="form-group">
+										  <div class="col-md-12 text-right">
+											<button type="submit" class="btn btn-primary btn-lg">Отправить</button>
+										  </div>
+										</div>
+								</fieldset>
+							</form>
+						 </div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 map">
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A03cc5468e8a07712516aad52c874481d5eea2606cf09c747329cd4035e502c86&amp;width=400&amp;height=400&amp;lang=ru_UA&amp;scroll=true"></script>
+					<p><span>Наш адрес:</span> Украина, г.Одесса, пр. М.Жукова 2, ТРЦ City Center</p>
+				</div>
+			</div>	
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p>Книжный магазин <q>Книготопия</q> 2015-2017</p>
+				</div>
+			</div>
+		</div>
+		
+	</footer><!--/Footer-->
+	
+
+  
+    <script src="js/jquery.js"></script>
+	<script src="js/price-range.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
