@@ -13,6 +13,7 @@
     <link href="css/animate.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
+	<link href="fancybox/dist/jquery.fancybox.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -252,7 +253,6 @@
 						<div class="col-sm-5">
 							<div class="view-product">
 								<img src="images/product-details/prod8.jpg" alt="" />
-								<h3>ZOOM</h3>
 							</div>
 							<div id="similar-product" class="carousel slide" data-ride="carousel">
 								
@@ -260,9 +260,9 @@
 								    <div class="carousel-inner">
 										<div class="item active">
 											<div class="preview">
-												<a href=""><img src="images/product-details/det1.jpg" alt=""></a>
-												<a href=""><img src="images/product-details/det2.jpg" alt=""></a>
-												<a href=""><img src="images/product-details/det3.jpg" alt=""></a>
+												<a href="images/product-details/det1.jpg" data-fancybox="images"><img src="images/product-details/det1.jpg" alt=""></a>
+												<a href="images/product-details/det2.jpg" data-fancybox="images"><img src="images/product-details/det2.jpg" alt=""></a>
+												<a href="images/product-details/det3.jpg" data-fancybox="images"><img src="images/product-details/det3.jpg" alt=""></a>
 											</div>
 										</div>
 									</div>
@@ -302,14 +302,14 @@
 							</div><!--/product-information-->
 						<h3>Описание</h3>					
 						</div>
-						<p>Сегодня мир MARVEL, по всеобщему признанию, является важнейшим элементом современной культуры наряду со Средиземьем Дж. Р.Р. Толкиена и некоторыми другими фантастическими измерениями. Издание ВПЕРВЫЕ предоставит российским читателям возможность подробнейшим образом погрузиться в невероятный мир культовых супергероев и узнать полную историю становления и развития вселенной MARVEL. Некоторые персонажи, успев заработать статус современных легенд, заслужили особый почёт: кому-то из них выделили всю страницу, кому-то целый разворот, а на ярчайших героев и злодеев MARVEL не жалко было потратить и по два разворота! Все имена расставлены в порядке английского алфавита. В конце книги есть алфавитный указатель (русскоязычный). В начале книги Предисловие от редактора Marvel Ральфа Маккио и Вступление от Стэна Ли.</p>						
+						<p class="description">Сегодня мир MARVEL, по всеобщему признанию, является важнейшим элементом современной культуры наряду со Средиземьем Дж. Р.Р. Толкиена и некоторыми другими фантастическими измерениями. Издание ВПЕРВЫЕ предоставит российским читателям возможность подробнейшим образом погрузиться в невероятный мир культовых супергероев и узнать полную историю становления и развития вселенной MARVEL. Некоторые персонажи, успев заработать статус современных легенд, заслужили особый почёт: кому-то из них выделили всю страницу, кому-то целый разворот, а на ярчайших героев и злодеев MARVEL не жалко было потратить и по два разворота! Все имена расставлены в порядке английского алфавита. В конце книги есть алфавитный указатель (русскоязычный). В начале книги Предисловие от редактора Marvel Ральфа Маккио и Вступление от Стэна Ли.</p>						
 					</div><!--/product-details-->
 					
 					<div class="category-tab shop-details-tab"><!--category-tab-->
 						<div class="col-sm-12">
 							<ul class="nav nav-tabs">
 								<li><a href="#companyprofile" data-toggle="tab">Похожие товары</a></li>
-								<li class="active"><a href="#reviews" data-toggle="tab">Отзывы (5)</a></li>
+								<li class="active"><a href="#reviews" data-toggle="tab">Отзывы (1)</a></li>
 							</ul>
 						</div>
 						<div class="tab-content">						
@@ -332,7 +332,7 @@
 											<div class="productinfo text-center">
 												<img src="images/product-details/rec2.jpg" alt="" />
 												<h2>2028 Грн.</h2>
-												<a href="#"><p><p>Энциклопедия Marvel. Мстители</q></p></a>
+												<a href="#"><p><p><q>Энциклопедия Marvel. Мстители</q></p></a>
 												<button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</button>
 											</div>
 										</div>
@@ -344,7 +344,7 @@
 											<div class="productinfo text-center">
 												<img src="images/product-details/rec3.jpg" alt="" />
 												<h2>2028 Грн.</h2>
-												<a href="#"><p><p>Энциклопедия Marvel. Хроники</q></p></a>
+												<a href="#"><p><p><q>Энциклопедия Marvel. Хроники</q></p></a>
 												<button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</button>
 											</div>
 										</div>
@@ -552,5 +552,6 @@
 	<script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
+	<script src="fancybox/dist/jquery.fancybox.min.js"></script>
 </body>
 </html>
